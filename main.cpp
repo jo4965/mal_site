@@ -62,6 +62,7 @@ void create_drop_log(string * mal_site) // If an url is dropped, this function w
 
     cout << message << endl;
     fputs(message.c_str(), fp);
+    fputs('\n', fp);
     fclose(fp);
     return;
 }
